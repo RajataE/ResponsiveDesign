@@ -43,21 +43,7 @@
       margin-bottom: 10px;
     }
   }
-  @media (min-width: 310px) and (max-width: 350px) {
-    .contentBox {
-      display: flex;
-      flex-wrap: wrap !important;
-      justify-content: space-between;
-      flex-direction: column;
-    }
-    .contentOne > div {
-      background: rgb(32, 180, 238);
-      padding: 15px 120px;
-      margin: 10px 10px 0px 0px;
-      width: 100%;
-    }
-  }
-  
+ 
   @media (min-width: 769px) {
     .contentTwo {
       min-height: 0px;
@@ -67,20 +53,24 @@
       margin-left: auto;
       margin-top: 220px;
       margin-bottom: 10px;
+      flex-direction: column;
     }
     .contentOne{
-      min-width: 400px !important;
+      min-width: 400px;
        }
   }
-  
-  @media (min-width: 325px) {
-    .contentOne > div {
-      background: rgb(32, 180, 238);
-      padding: 15px  120px;
-      margin: 10px 20px 0px 0px;
-      max-width: 100%;
+  @media (min-width: 310px) and (max-width: 350px) {
+    .contentBox {
+      display: flex;
+      flex-wrap: wrap !important;
+      justify-content: space-between;
+      flex-direction: column;
+      
     }
-    .contentOne{
-   min-width: 971px;
+    .contentOne {
+      background: rgb(32, 180, 238);
+      padding: 120px;
+      margin: 10px 10px 0px 0px;
+      min-width: 75%;
     }
   }
